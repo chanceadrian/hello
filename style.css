@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;575;600;650;700&display=swap');
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0px;
+    gap: 30px;
+    padding: 30px;
+    background: #F5F5F7;
+    position: relative;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong, p {
+    margin: 0;
+}
+
+strong, p {
+    font-size: 21px;
+    line-height: 1.381002381;
+    font-weight: 700;
+    letter-spacing: .011em;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: clamp(106px, 7.372654155vw, 114px);
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.0018em;
+    margin-bottom: 12px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: fit-content;
+    gap: 8px;
+    justify-content: center;
+    align-self: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 12px;
+    gap: 12px;
+    padding-block: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: 
+        background-color 0.3s ease-out,
+            color 0.3s ease-out,
+            fill 0.3s ease-out,
+            stroke 0.3s ease-out;
+    color: #86868B;
+    fill:#86868B;
+    stroke: #86868B;
+}
+
+.link:hover {
+    background-color: #E5E5E7;
+    color: #0066CC;
+    fill:#0066CC;
+    stroke: #0066CC;
+}
+
+svg {
+    fill:inherit;
+    stroke: inherit;
+    width: 27px;
+    height: 27px;
+}
+
+.link p {
+    font-weight: 500;
+}
+
+.story {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-radius: 34px;
+    height: 700px;
+    color: black;
+    width: 100%;
+    max-width: 1680px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-inline: 22px;
+    padding-block: 12px;
+    background-color: white;
+    color: #0066CC;
+    gap: 8px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    align-items: center;
+}
+
+button p {
+    font-size: 17px;
+}
+
+button svg {
+    fill:#0066CC;
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width: 767px) {
+    body {
+        padding: 24px;
+        gap: 24px;
+    }
+
+    h1 {
+        font-size: 46px;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: -0.00043em;
+    }
+
+    strong, p {
+        font-size: 19px;
+        line-height: 1.4211026316;
+        font-weight: 700;
+        letter-spacing: .012em;
+    }
+
+    p {
+        font-weight: 400;
+    }
+
+    .story {
+        height: 490px;
+        padding: 24px;
+        padding-inline: 20px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    .link {
+        flex-direction: column;
+        gap: 0px;
+        padding-inline: 8px;
+    }
+
+    button {
+        padding-block: 8px;
+        padding-inline: 16px;
+    }
+}
