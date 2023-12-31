@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;575;600;650;700&display=swap');
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', "system-ui", sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     display: flex;
@@ -21,6 +21,10 @@ a {
     margin: 0;
 }
 
+br {
+    display: none;
+}
+
 h1, h2, h3, h4, h5, h6, strong, p {
     margin: 0;
 }
@@ -38,17 +42,17 @@ p {
 
 h1 {
     font-size: clamp(106px, 7.372654155vw, 114px);
-    line-height: 1;
-    font-weight: 600;
+    line-height: 1.05;
+    font-weight: 500;
     letter-spacing: -0.0018em;
     margin-bottom: 12px;
 }
 
 nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     width: fit-content;
-    gap: 8px;
+    gap: 4px;
     justify-content: center;
     align-self: center;
 }
@@ -72,8 +76,12 @@ nav {
     stroke: #86868B;
 }
 
+.link p {
+    font-size: 18px;
+}
+
 .link:hover {
-    background-color: #E5E5E7;
+    background-color: rgb(229, 229, 231, 0.53);
     color: #0066CC;
     fill:#0066CC;
     stroke: #0066CC;
@@ -82,8 +90,8 @@ nav {
 svg {
     fill:inherit;
     stroke: inherit;
-    width: 27px;
-    height: 27px;
+    width: 24px;
+    height: 24px;
 }
 
 .link p {
@@ -101,8 +109,8 @@ svg {
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    border-radius: 34px;
-    height: 700px;
+    border-radius: 30px;
+    height: 685px;
     color: black;
     width: 100%;
     max-width: 1680px;
@@ -112,6 +120,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4px;
 }
 
 button {
@@ -142,8 +151,12 @@ button svg {
 
 @media (max-width: 767px) {
     body {
-        padding: 24px;
-        gap: 24px;
+        padding: 21px;
+        gap: 21px;
+    }
+
+    br {
+        display: initial;
     }
 
     h1 {
@@ -168,6 +181,7 @@ button svg {
         height: 490px;
         padding: 24px;
         padding-inline: 20px;
+        border-radius: 34px;
     }
 
     nav {
