@@ -301,6 +301,16 @@ button svg {
     }
 }
 
+@media (orientation: landscape) and (max-width: 767px) {
+    body {
+        padding-top: calc(9.375vw + 43.58px);
+    }
+
+    nav {
+        top: 4.6875vw;
+    }
+}
+
 .about-text section h2 {
     line-height: 0.95;
 }
