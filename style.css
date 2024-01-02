@@ -242,7 +242,7 @@ button svg {
     body {
         padding: 6.25vw;
         gap: 6.25vw;
-        padding-top: calc(9.375vw + 43.58px);
+        padding-top: calc(12.5vw + 43.58px);
         padding-bottom: 94px;
     }
 
@@ -275,9 +275,9 @@ button svg {
         border-radius: 34px;
     }
 
-    nav, .dark-nav {
+    nav {
         gap: 4px;
-        top: 4.6875vw;
+        top: 6.25vw;
     }
 
     .link, .dark-link {
