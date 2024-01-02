@@ -146,9 +146,9 @@ nav, .dark-nav {
             color 0.3s ease-out,
             fill 0.3s ease-out,
             stroke 0.3s ease-out;
-    color: #86868B;
-    fill:#86868B;
-    stroke: #86868B;
+    color: rgb(22, 22, 23, 0.6);
+    fill:rgb(22, 22, 23, 0.6);
+    stroke: rgb(22, 22, 23, 0.6);
 }
 
 .dark-link {
