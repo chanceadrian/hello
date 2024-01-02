@@ -170,9 +170,9 @@ nav, .dark-nav {
 
 .dark-link:hover {
     background-color: rgba(255, 255, 255, 0.9);
-    color: #0066CC;
-    fill:#0066CC;
-    stroke: #0066CC;
+    color: #0058b0;
+    fill:#0058b0;
+    stroke: #0058b0;
 }
 
 svg {
@@ -279,13 +279,14 @@ button svg {
         gap: 4px;
     }
 
-    .link {
+    .link, .dark-link {
         flex-direction: column;
         gap: 0px;
         padding-inline: 10px;
+        padding-block: 5px;
     }
 
-    .link p {
+    .link p, .dark-link p {
         font-weight: 400;
     }
 
@@ -509,5 +510,11 @@ button svg {
     .immersive-photo-holder {
         border-radius: 16px;
     }
-    
+}
+
+.audio {
+    background: #161617;
+    padding: 60px;
+    padding-top: 138px;
+    gap: 60px;
 }
