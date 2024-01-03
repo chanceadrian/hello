@@ -25,6 +25,13 @@ body, .about-text, .audio, .writing {
     padding-bottom: 30px;
 }
 
+.writing {
+    background-color: #cccccc;
+    padding: 120px;
+    padding-top: 108px;
+    gap: 25px;
+}
+
 .about-text {
     padding: 100px;
     padding-bottom: 50px;
@@ -46,7 +53,7 @@ a {
     margin: 0;
 }
 
-h6 br {
+h6 br, h1 br {
     display: none;
 }
 
@@ -159,11 +166,16 @@ nav, .dark-nav {
     stroke: #ffffff;
 }
 
+.selected {
+    opacity: 0.7;
+}
+
 .link p, .dark-link p {
     font-size: 18px;
 }
 
 .link:hover {
+    opacity: 1;
     background-color: rgba(255, 255, 255, 0.75);
     color: #0066CC;
     fill:#0066CC;
@@ -171,7 +183,8 @@ nav, .dark-nav {
 }
 
 .dark-link:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 1;
+    background-color: rgba(255, 255, 255);
     color: #0058b0;
     fill:#0058b0;
     stroke: #0058b0;
@@ -316,6 +329,7 @@ button svg {
     align-items: flex-start;
     padding-top: 20px;
     padding-bottom: 30px;
+    text-align: left;
 }
 
 .three-columns a {
@@ -345,6 +359,8 @@ span {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 16px;
     column-gap: 16px;
+    text-align: left;
+    width: 100%;
 }
 
 .three-columns a {
@@ -353,7 +369,6 @@ span {
     padding: 16px;
     color: white;
     border-radius: 16px;
-    background-color: #1D1D1F;
     gap: 4px;
     transition: background-color 0.3s ease-out;
 }
@@ -421,10 +436,6 @@ span {
     background: linear-gradient(180deg, #161617 0%, rgba(22, 22, 23, 0.80) 20%, rgba(22, 22, 23, 0.20) 40%, rgba(22, 22, 23, 0.20) 60%, rgba(22, 22, 23, 0.80) 80%, #161617 100%)
 }
 
-.light {
-    background: linear-gradient(180deg, #f5f5f7 0%, rgba(245, 245, 247, 0.80) 20%, rgba(245, 245, 247, 0.20) 40%, rgba(245, 245, 247, 0.20) 60%, rgba(245, 245, 247, 0.80) 80%, #f5f5f7 100%)
-}
-
 .immersive-photo-holder {
     display: flex;
     flex-direction: row;
@@ -435,6 +446,7 @@ span {
     overflow: hidden;
     position: relative;
     width: 100%;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 }
 
 .immersive-photo {
@@ -453,7 +465,7 @@ span {
     justify-content: flex-start;
     color:#86868B;
     width: 100%;
-    gap: 50px;
+    gap: 30px;
 }
 
 @media (max-width: 767px) {
@@ -461,7 +473,7 @@ span {
         padding-bottom: 12.5vw;
     }
 
-    .about-text {
+    .about-text, .writing {
         padding: 6.25vw;
         padding-block: 12.5vw;
         padding-bottom: 6.25vw;
@@ -680,10 +692,57 @@ span {
     }
 }
 
-.writing {
-    padding-top: 88px;
+.writing section {
+    margin-bottom: 10px;
 }
 
-.writing p {
-    color:#86868B;
+.writing section p, .writing .two-details p, .writing .link-away{
+    color:#5e5e5e;
+}
+
+.writing hr, .writing .three-columns a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.writing .link-away {
+    gap: 25px;
+}
+
+.writing strong {
+    color: black;
+}
+
+.gray {
+    background: linear-gradient(180deg, rgb(204, 204, 204) 0%, rgba(204, 204, 204, 0.80) 20%, rgba(204, 204, 204, 0.20) 40%, rgba(204, 204, 204, 0.20) 60%, rgba(204, 204, 204, 0.80) 80%, #cccccc 100%)
+}
+
+.gray-nav {
+    background-color: rgba(76, 76, 74, 0.65);
+}
+
+.two-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.writing-text {
+    columns: 250px 4;
+    column-gap: 21px;
+    margin-bottom: 3em;
+}
+
+.writing-text p {
+    margin-bottom: 1em;
+    font-size: 22px;
+    line-height: 1.47059;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    .writing {
+        padding-top: calc(12.5vw + 33.58px);
+        gap: 6.25vw;
+    }
 }
