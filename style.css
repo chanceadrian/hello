@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, strong, p {
 
 strong, p {
     font-size: 21px;
-    line-height: 1.381002381;
+    line-height: 1.1904761905;
     font-weight: 700;
     letter-spacing: .011em;
 }
@@ -70,46 +70,46 @@ p {
 }
 
 h1 {
-    font-size: clamp(106px, 7.372654155vw, 114px);
-    line-height: 1.05;
-    font-weight: 500;
-    letter-spacing: -0.0018em;
+    font-size: 110px;
+    line-height: .9166666667;
+    font-weight: 600;
+    letter-spacing: -0.0166666667em;
     margin-bottom: 12px;
 }
 
 h2 {
-    font-size: clamp(76px, 5.361930295vw, 84px);
-    line-height: 0.85;
+    font-size: 80px;
+    line-height: 1;
     font-weight: 700;
-    letter-spacing: -0.0018em;
+    letter-spacing: 0em;
 }
 
 h3 {
-    font-size: clamp(69px, 4.892761394vw, 73px);
-    line-height: 1.05;
+    font-size: 72px;
+    line-height: 1.1;
     font-weight: 700;
-    letter-spacing: -0.0018em;
+    letter-spacing: -0.022em;
 }
 
 h4 {
-    font-size: clamp(44px, 3.217158177vw, 52px);
-    line-height: 1.05;
+    font-size: 48px;
+    line-height: 1.0834933333;
     font-weight: 700;
-    letter-spacing: -0.0018em;
+    letter-spacing: .0055em;
 }
 
 h5 {
-    font-size: clamp(32px, 2.412868633vw, 40px);
-    line-height: 1.05;
+    font-size: 36px;
+    line-height: 1.2;
     font-weight: 700;
-    letter-spacing: -0.0018em;
+    letter-spacing: -0.006em;
 }
 
 h6 {
-    font-size: clamp(28px, 2.144772118vw, 36px);
-    line-height: 1.1;
+    font-size: 32px;
+    line-height: 1.125;
     font-weight: 700;
-    letter-spacing: -0.0018em;
+    letter-spacing: .004em;
 }
 
 nav, .dark-nav {
@@ -258,16 +258,16 @@ button svg {
 
     h1, h2, h3 {
         font-size: 46px;
-        line-height: 1;
+        line-height: .9230769231;
         font-weight: 700;
-        letter-spacing: -0.00043em;
+        letter-spacing: 0em;
     }
 
     strong, p {
         font-size: 19px;
-        line-height: 1.4211026316;
+        line-height: 1.23536;
         font-weight: 700;
-        letter-spacing: .012em;
+        letter-spacing: -.011em;
     }
 
     p {
@@ -323,22 +323,16 @@ button svg {
     align-items: flex-start;
 }
 
-.about-text strong, .about-text p {
-    font-size: 22px;
-}
-
 .four-columns section p, .three-columns a p {
     color:#86868B;
     font-weight: 700;
 }
 
-.three-columns a strong {
-    font-size: 19px;
-}
-
 .three-columns a p {
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.2105263158;
+    font-weight: 400;
+    letter-spacing: .012em;
 }
 
 .three-columns {
@@ -361,6 +355,7 @@ button svg {
     gap: 50px;
     color:#86868B;
     text-align: center;
+    margin-bottom: clamp(-36px, -2.680965147vw, -44px);
 }
 
 .quote h6 {
@@ -454,16 +449,18 @@ button svg {
         padding-bottom: 18.75%;
     }
 
-    .about-text strong, .about-text p {
-        font-size: 21px;
-    }
-
     h4 {
-        font-size: 32;
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 700;
+        letter-spacing: .004em;
     }
 
     h5 {
         font-size: 28px;
+        line-height: 1.1428571429;
+        font-weight: 700;
+        letter-spacing: .007em;
     }
 
     .black, .black p {
@@ -478,6 +475,10 @@ button svg {
         justify-content: flex-end;
         align-items: center;
         height: 531px;
+    }
+
+    .quote {
+        margin-bottom: 0px;
     }
 
     .back-gradient {
@@ -496,12 +497,20 @@ button svg {
         gap: 42px;
     }
 
+    .four-columns section p, .four-columns section strong {
+        font-size: 19px;
+    }
+
+    .four-columns section, .three-columns a {
+        gap: 4px;
+    }
+
     .three-columns {
-        gap: 6.25vw;
+        gap: 16px;
     }
 
     .link-away {
-        gap: 6.25vw;
+        gap: 16px;
     }
 
     .immersive-photo-back {
