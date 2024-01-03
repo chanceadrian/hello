@@ -281,7 +281,7 @@ button svg {
         border-radius: 34px;
     }
 
-    nav {
+    nav, .dark-nav {
         gap: 4px;
         top: 6.25vw;
     }
