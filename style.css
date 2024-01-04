@@ -704,7 +704,7 @@ span {
         height: clamp(168px, 43.25699746vw, 172px);
     }
 
-    .hide {
+    .hide-mobile {
         display: none;
     }
 
