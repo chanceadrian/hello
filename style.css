@@ -26,10 +26,11 @@ body, .about-text, .audio, .writing {
 }
 
 .writing {
-    background-color: #cccccc;
+    background-color: #EEEDED;
     padding: 120px;
-    padding-top: 108px;
-    gap: 25px;
+    padding-top: 88px;
+    gap: 30px;
+    color: #221E1D;
 }
 
 .about-text {
@@ -130,7 +131,7 @@ nav, .dark-nav {
     position: fixed;
     top: 30px;
     padding: 4px;
-    background-color: rgb(245, 245, 247, 0.85);
+    background-color: rgb(245, 245, 247, 0.8);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-radius: 16px;
@@ -138,7 +139,7 @@ nav, .dark-nav {
 }
 
 .dark-nav {
-    background-color: rgb(22, 22, 23, 0.6);
+    background-color: rgb(22, 22, 23, 0.8);
 }
 
 .link, .dark-link {
@@ -167,7 +168,11 @@ nav, .dark-nav {
 }
 
 .selected {
-    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.selected-w {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .link p, .dark-link p {
@@ -175,19 +180,15 @@ nav, .dark-nav {
 }
 
 .link:hover {
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.75);
     color: #0066CC;
     fill:#0066CC;
     stroke: #0066CC;
 }
 
 .dark-link:hover {
-    opacity: 1;
-    background-color: rgba(255, 255, 255);
-    color: #0058b0;
-    fill:#0058b0;
-    stroke: #0058b0;
+    color: #2997ff;
+    fill:#2997ff;
+    stroke: #2997ff;
 }
 
 svg {
@@ -195,10 +196,6 @@ svg {
     stroke: inherit;
     width: 24px;
     height: 24px;
-}
-
-.link p {
-    font-weight: 500;
 }
 
 .story, .hero {
@@ -357,6 +354,7 @@ span {
     display: grid;
     align-items: flex-start;
     grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
     row-gap: 16px;
     column-gap: 16px;
     text-align: left;
@@ -369,6 +367,7 @@ span {
     padding: 16px;
     color: white;
     border-radius: 16px;
+    box-sizing: border-box;
     gap: 4px;
     transition: background-color 0.3s ease-out;
 }
@@ -433,7 +432,7 @@ span {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(180deg, #161617 0%, rgba(22, 22, 23, 0.80) 20%, rgba(22, 22, 23, 0.20) 40%, rgba(22, 22, 23, 0.20) 60%, rgba(22, 22, 23, 0.80) 80%, #161617 100%)
+    background: linear-gradient(180deg, #161617 0%, rgba(22, 22, 23, 0.70) 20%, rgba(22, 22, 23, 0.10) 40%, rgba(22, 22, 23, 0.10) 60%, rgba(22, 22, 23, 0.70) 80%, #161617 100%)
 }
 
 .immersive-photo-holder {
@@ -447,6 +446,7 @@ span {
     position: relative;
     width: 100%;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    animation: immersivePhoto 1.5s ease-in-out none;
 }
 
 .immersive-photo {
@@ -458,6 +458,24 @@ span {
     position: absolute;
     left: -100px;
     z-index: 1;
+}
+
+@keyframes immersivePhoto {
+    0% {
+        scale: 0.95;
+    }
+    25% {
+        scale: 1.01;
+    }
+    50% {
+        scale: 0.999;
+    }
+    75% {
+        scale: 1.001;
+    }
+    100% {
+        scale: 1;
+    }
 }
 
 .link-away {
@@ -531,7 +549,6 @@ span {
     .three-columns a {
         gap: 2px;
         border-radius: 0;
-        background-color: #1D1D1F;
         padding:0;
     }
 
@@ -540,6 +557,10 @@ span {
         background-color: #1D1D1F;
         padding: 16px;
         border-radius: 16px;
+    }
+
+    .writing .three-columns {
+        background-color: rgb(0, 0, 0, 0.05);
     }
 
     .link-away {
@@ -696,28 +717,33 @@ span {
     margin-bottom: 10px;
 }
 
-.writing section p, .writing .two-details p, .writing .link-away{
-    color:#5e5e5e;
+.writing section p {
+    color: #726F6F;
 }
 
-.writing hr, .writing .three-columns a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+.two-details p {
+    color: #838287;
 }
 
-.writing .link-away {
-    gap: 25px;
+.writing .three-columns a:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.writing hr {
+    background-color: rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
 }
 
 .writing strong {
-    color: black;
+    color: #221E1D;
 }
 
 .gray {
-    background: linear-gradient(180deg, rgb(204, 204, 204) 0%, rgba(204, 204, 204, 0.80) 20%, rgba(204, 204, 204, 0.20) 40%, rgba(204, 204, 204, 0.20) 60%, rgba(204, 204, 204, 0.80) 80%, #cccccc 100%)
+    background: linear-gradient(180deg, #eeeced 0%, rgba(238, 236, 237, 0.70) 20%, rgba(238, 236, 237, 0.10) 40%, rgba(238, 236, 237, 0.10) 60%, rgba(238, 236, 237, 0.7) 80%, #eeeced 100%)
 }
 
 .gray-nav {
-    background-color: rgba(76, 76, 74, 0.65);
+    background-color: rgb(238, 237, 237, 0.8);
 }
 
 .two-details {
@@ -730,7 +756,7 @@ span {
 .writing-text {
     columns: 250px 4;
     column-gap: 21px;
-    margin-bottom: 3em;
+    margin-bottom: 30px;
 }
 
 .writing-text p {
@@ -740,9 +766,21 @@ span {
     font-weight: 400;
 }
 
+.two-details :nth-child(2) {
+    text-align: right;
+}
+
 @media (max-width: 767px) {
     .writing {
         padding-top: calc(12.5vw + 33.58px);
         gap: 6.25vw;
+    }
+
+    .writing-text p {
+        font-size: 19px;
+    }
+
+    .writing .three-columns a p {
+        font-size: 17px;
     }
 }
