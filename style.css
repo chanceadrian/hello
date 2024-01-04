@@ -734,6 +734,10 @@ span {
     margin-bottom: 30px;
 }
 
+.writing .link-away .three-columns hr {
+    margin-bottom: 0px;
+}
+
 .writing strong {
     color: #221E1D;
 }
