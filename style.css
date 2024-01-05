@@ -887,7 +887,7 @@ span {
     font-weight: 400;
 }
 
-.two-details:nth-child(2) {
+.two-details p:nth-child(2) {
     text-align: right;
 }
 
