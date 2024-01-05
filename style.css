@@ -308,8 +308,8 @@ button svg {
     .link, .dark-link {
         flex-direction: column;
         gap: 0px;
-        padding-inline: 10px;
-        padding-block: 5px;
+        padding-inline: 12px;
+        padding-block: 6px;
     }
 
     .link p, .dark-link p {
