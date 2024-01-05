@@ -267,8 +267,7 @@ button svg {
     body {
         padding: 6.25vw;
         gap: 6.25vw;
-        padding-top: calc(12.5vw + 43.58px);
-        padding-bottom: 94px;
+        padding-bottom: calc(12.5vw + 43.58px);
     }
 
     br {
@@ -302,7 +301,8 @@ button svg {
 
     nav, .dark-nav {
         gap: 4px;
-        top: 6.25vw;
+        top: auto;
+        bottom: 6.25vw;
     }
 
     .link, .dark-link {
@@ -605,7 +605,7 @@ span {
 
 @media (max-width: 767px) {
     .about {
-        padding-bottom: 12.5vw;
+        padding-bottom: calc(12.5vw + 43.58px);
     }
 
     .about-text, .writing {
@@ -664,15 +664,16 @@ span {
     }
 
     .three-columns a {
-        gap: 2px;
+        gap: 0px;
         border-radius: 0;
         padding:0;
     }
 
     .three-columns {
-        gap: 8px;
+        gap: 16px;
         background-color: #1D1D1F;
         padding: 16px;
+        padding-block: 18px;
         border-radius: 16px;
     }
 
@@ -801,8 +802,7 @@ span {
 @media (max-width: 767px) {
     .audio {
         padding: 6.25vw;
-        padding-bottom: 18.75vw;
-        padding-top: calc(12.5vw + 43.58px);
+        padding-bottom: calc(12.5vw + 43.58px);
         gap: 12vw;
     }
 
@@ -893,7 +893,7 @@ span {
 
 @media (max-width: 767px) {
     .writing {
-        padding-top: calc(12.5vw + 33.58px);
+        padding-bottom: calc(12.5vw + 33.58px);
         gap: 6.25vw;
     }
 
