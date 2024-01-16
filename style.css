@@ -177,7 +177,7 @@ nav, .dark-nav {
 }
 
 .link p, .dark-link p {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .link:hover {
@@ -340,8 +340,8 @@ button svg {
 }
 
 .feature {
-    background: linear-gradient(180deg, #4A7597 0%, #365976 100%);
-    color: #cfe9ff;
+    background: linear-gradient(180deg, #2B53AE 0%, #8194D2 100%);
+    color: white;
 }
 
 .feature button, .feature button svg {
@@ -889,6 +889,34 @@ span {
 
 .two-details p:nth-child(2) {
     text-align: right;
+}
+
+.principles {
+    text-align: left;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.principles .four-columns {
+    row-gap: 30px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.ideal {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ideal p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.ideal strong {
+    font-weight: 600;
+    font-size: 22px;
 }
 
 @media (max-width: 767px) {
