@@ -34,6 +34,7 @@ nav {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-radius: 16px;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 .link {
@@ -244,7 +245,6 @@ article {
     padding: 70px;
     background-color: white;
     border-radius: 45px;
-    overflow: none;
 }
 
 .side-text, .text-grid, .center-text {
@@ -387,11 +387,12 @@ hr {
 
     nav {
         gap: 4px;
-        top: auto;
         top: 0;
         width: 100%;
         border-radius: 0;
-        height: 48px;
+        height: 45px;
+        justify-content: space-between;
+        padding-inline: 30px;
     }
 
     .link {
@@ -399,6 +400,11 @@ hr {
         gap: 0px;
         padding-inline: 12px;
         padding-block: 6px;
+    }
+
+    .link p {
+        line-height: 1.23536;
+        letter-spacing: -.011em;
     }
 
     svg {
@@ -413,14 +419,10 @@ hr {
     }
 
     h2, h3 {
-        font-size: 40px;
-        line-height: 1.1;
-        font-weight: 700;
-        letter-spacing: 0em;
-    }
-
-    h3 {
         font-size: 32px;
+        line-height: 1.125;
+        font-weight: 700;
+        letter-spacing: .004em;
     }
 
     p, header p {
@@ -431,10 +433,11 @@ hr {
     }
 
     h4 {
-        font-size: 32px;
+        font-size: 24px;
         line-height: 1.125;
         font-weight: 700;
         letter-spacing: .004em;
+        opacity: 0;
     }
 
     h5, h6, strong {
@@ -459,7 +462,7 @@ hr {
     }
 
     .key img {
-        width: 340%;
+        width: 230%;
         margin-bottom: -70px;
         min-height: 595.29px;
     }
@@ -470,7 +473,17 @@ hr {
     }
 
     header {
-        padding-inline: 30px;
+        padding-inline: 0px;
+        overflow: hidden;
+    }
+
+    header h1 {
+        padding-inline: 20px;
+    }
+
+    header p {
+        padding-inline: 25px;
+        font-size: 19px;
     }
 
     .subtitle {
@@ -479,6 +492,7 @@ hr {
     }
 
     article {
+        overflow: hidden;
         gap: 30px;
         padding: 30px;
         border-radius: 0px;

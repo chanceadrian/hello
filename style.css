@@ -138,6 +138,7 @@ nav, .dark-nav {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-radius: 16px;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 .dark-nav {
@@ -302,11 +303,12 @@ button svg {
 
     nav, .dark-nav {
         gap: 4px;
-        top: auto;
         top: 0;
         width: 100%;
         border-radius: 0;
-        height: 48px;
+        height: 45px;
+        justify-content: space-between;
+        padding-inline: 30px;
     }
 
     .link, .dark-link {
@@ -413,7 +415,7 @@ button svg {
     .design img {
         margin-top: -2px;
         width: 135%;
-        min-height: 356.59px;
+        min-height: 356.59px; c
     }
 
     .r-1 img {
