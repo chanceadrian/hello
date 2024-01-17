@@ -360,7 +360,7 @@ button svg {
     height: 100%;
     justify-content: center;
     padding: clamp(10px, 4.021447721vw, 64px);
-    min-width: 100%;
+    min-width: 50%;
 }
 
 .design section:nth-child(2) {
