@@ -413,6 +413,7 @@ button svg {
     .design img {
         margin-top: -2px;
         width: 135%;
+        min-height: 356.59px;
     }
 
     .r-1 img {
