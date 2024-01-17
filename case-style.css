@@ -379,9 +379,9 @@ hr {
 
     body {
         padding: 0px;
-        padding-top: 15px;
+        padding-top: calc(48px + 6.25vw);
+        padding-bottom: 30px;
         gap: 15px;
-        padding-bottom: calc(12.5vw + 43.58px);
         overflow-x: hidden;
     }
 
@@ -391,6 +391,7 @@ hr {
         top: 0;
         width: 100%;
         border-radius: 0;
+        height: 48px;
     }
 
     .link {
