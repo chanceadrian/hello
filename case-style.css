@@ -527,7 +527,7 @@ hr {
     }
     
     .side-text img {
-        width: 180%;
+        width: 200%;
     }
     
     .together .side-text:nth-child(1) {
@@ -571,7 +571,7 @@ hr {
     }
     
     .center-text img {
-        width: 180%;
+        width: 200%;
         margin-bottom: -50px;
     }
     
@@ -588,7 +588,7 @@ hr {
     }
     
     .iterations img {
-        width: 200%;
+        width: 350%;
         margin-bottom: 30px;
     }
 
