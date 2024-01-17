@@ -415,7 +415,7 @@ button svg {
     .design img {
         margin-top: -2px;
         width: 135%;
-        min-height: 356.59px; c
+        min-height: 356.59px; 
     }
 
     .r-1 img {
@@ -461,6 +461,10 @@ button svg {
 
 span {
     color:#ffffff;
+}
+
+.writing span {
+    color: rgb(34, 30, 29, 0.53);
 }
 
 .three-columns a p {
@@ -605,7 +609,7 @@ span {
     justify-content: flex-start;
     color:#86868B;
     width: 100%;
-    gap: 30px;
+    gap: 15px;
     max-width: 1680px;
 }
 
