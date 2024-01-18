@@ -176,6 +176,7 @@ header p {
     font-weight: 400;
     letter-spacing: .007em;
     opacity: 0.53;
+    padding-inline: 50px;
 }
 
 span {
