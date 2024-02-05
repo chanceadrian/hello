@@ -904,6 +904,7 @@ span {
     align-items: flex-start;
     padding-bottom: 30px;
     width: 100%;
+    max-width: 1680px;
 }
 
 .principles .four-columns {
