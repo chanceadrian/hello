@@ -220,7 +220,7 @@ img {
 .key img {
     width: 120%;
     margin-bottom: -100px;
-    min-height: 1000px;
+    min-height: auto;
 }
 
 .key header {
@@ -465,7 +465,7 @@ hr {
     .key img {
         width: 230%;
         margin-bottom: -70px;
-        min-height: 595.29px;
+        min-height: auto;
     }
 
     .key header {
