@@ -220,7 +220,7 @@ img {
 .key img {
     width: 120%;
     margin-bottom: -100px;
-    min-height: auto;
+    min-height: 500px;
 }
 
 .key header {
