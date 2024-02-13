@@ -165,7 +165,7 @@ strong {
 p {
     font-size: 19px;
     line-height: 1.4211026316;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: .012em;
     opacity: 0.53;
 }
@@ -426,7 +426,7 @@ hr {
         letter-spacing: .004em;
     }
 
-    p, header p {
+    p, header p, h6 {
         font-size: 17px;
         line-height: 1.47059;
         font-weight: 600;
@@ -449,12 +449,11 @@ hr {
     }
 
     h6 {
-        font-weight: 600;
         width: auto;
     }
 
-    p {
-        font-weight: 500;
+    p, h6 {
+        font-weight: 400;
     }
 
     .app {
@@ -465,7 +464,7 @@ hr {
     .key img {
         width: 230%;
         margin-bottom: -70px;
-        min-height: auto;
+        min-height: 300px;
     }
 
     .key header {
