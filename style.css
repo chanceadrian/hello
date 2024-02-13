@@ -222,10 +222,6 @@ svg {
     overflow: hidden;
 }
 
-.story:hover, .design:hover {
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
-}
-
 section {
     display: flex;
     flex-direction: column;
