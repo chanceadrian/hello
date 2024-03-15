@@ -149,7 +149,7 @@ nav, .dark-nav {
     display: flex;
     flex-direction: row;
     padding-inline: 12px;
-    gap: 12px;
+    gap: 8px;
     padding-block: 8px;
     justify-content: center;
     align-items: center;
@@ -159,15 +159,13 @@ nav, .dark-nav {
             color 0.3s ease-out,
             fill 0.3s ease-out,
             stroke 0.3s ease-out;
-    color: #86868B;
-    fill:#86868B;
-    stroke: #86868B;
+    color: rgb(0, 0, 0, 0.5);
+    fill:rgb(0, 0, 0, 0.5);
 }
 
 .dark-link {
-    color: #ffffff;
-    fill:#ffffff;
-    stroke: #ffffff;
+    color: rgb(255, 255, 255, 0.55);
+    fill:rgb(255, 255, 255, 0.55);
 }
 
 .selected-b {
@@ -197,8 +195,6 @@ nav, .dark-nav {
 svg {
     fill:inherit;
     stroke: inherit;
-    width: 24px;
-    height: 24px;
 }
 
 .story, .hero, .design {

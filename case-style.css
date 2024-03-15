@@ -41,7 +41,7 @@ nav {
     display: flex;
     flex-direction: row;
     padding-inline: 12px;
-    gap: 12px;
+    gap: 8px;
     padding-block: 8px;
     justify-content: center;
     align-items: center;
@@ -71,8 +71,6 @@ nav {
 svg {
     fill:inherit;
     stroke: inherit;
-    width: 24px;
-    height: 24px;
 }
 
 a {
